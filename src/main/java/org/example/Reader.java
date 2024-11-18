@@ -7,6 +7,8 @@ public class Reader {
     int age;
     String sex;
     List<Book> books = new ArrayList<>();
+
+
     Reader(String name, int age,String sex){
         this.name=name;
         this.age=age;

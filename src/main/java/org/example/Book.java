@@ -7,10 +7,14 @@ public class Book {
     String type;
     Boolean isHardCover;
     int currentPage;
-    Book(Author author, String title, int page){
+    Book(Author author, String title, int page,String type,Boolean isHardCover,int currentPage){
         this.author=author;
         this.title=title;
         this.page=page;
+    }
+    Book(Author author, String title, int page){
+        this(author,title,page, null, false, 1);
+        // constructor çoklu kullanımı constructor kendinden daha zeki olan consturtoru çagırıyor
     }
 
     public String getTitle() {
