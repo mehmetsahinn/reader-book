@@ -1,6 +1,9 @@
 package org.example;
 
 public class Author {
+    Author(String name){
+        this.name=name;
+    }
     String name;
 
     public String getName() {
